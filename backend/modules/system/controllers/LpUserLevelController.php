@@ -1,7 +1,7 @@
 <?php
 /**
 * Created by 廖鹏
-* Date: 2018年05月10日 16:21*/
+* Date: 2018年05月10日 16:43*/
 namespace backend\modules\system\controllers;
 use backend\controllers\AdminController;
 use common\models\LpUserLevel;
@@ -134,7 +134,7 @@ class LpUserLevelController extends AdminController
     */
     public function actionDetail($id)
     {
-        $model=LpUsers::find()->where(['level_id'=>$id]);
+        $model=LpUserLevel::find()->where(['level_id'=>$id]);
         //处理外键
 
         $data = $model->asArray()->one();

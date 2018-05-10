@@ -461,7 +461,7 @@ foreach ($tables as $key=>$val)
     */
     public function actionDetail($id)
     {
-        $model=LpUsers::find()->where(['<?=$pks?>'=>$id]);
+        $model=<?= $modelClass ?>::find()->where(['<?=$pks?>'=>$id]);
         //处理外键
 
 <?

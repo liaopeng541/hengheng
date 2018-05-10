@@ -93,7 +93,7 @@ if (isset($giishow['column_btn'])) {
                                     $content.=\'<li id="item-\'.$key.\'" class="lp_upfile_itme">
                                 <img id="item-img-\'.$key.\'" src="\'.$val.\'" style="display: inline-block;">
                             </li>\';
-                                }}\n echo $content?>'."\n";
+                                }} echo $content?>'."\n";
                 $content.='<div style="clear: both"></div>
                         </ul>
                     </div>';

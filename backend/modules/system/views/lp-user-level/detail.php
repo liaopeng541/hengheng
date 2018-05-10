@@ -132,7 +132,7 @@
                                     $content.='<li id="item-'.$key.'" class="lp_upfile_itme">
                                 <img id="item-img-'.$key.'" src="'.$val.'" style="display: inline-block;">
                             </li>';
-                                }}\n echo $content?>
+                                }} echo $content?>
 <div style="clear: both"></div>
                         </ul>
                     </div>
