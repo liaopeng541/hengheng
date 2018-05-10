@@ -83,8 +83,6 @@
 
                                                 <th lay-data="{field:'describe'}">描述</th>
 
-                                                <th lay-data="{field:'thumb',templet:'#thumbTpl'}">展示图片</th>
-
                                                 <th lay-data="{field:'sort',sort: true,edit: 'text'}">排序</th>
 
                                                 <th lay-data="{field:'is_show',templet:'#is_showTpl'}">APP首页展示</th>
@@ -105,16 +103,7 @@
 </body>
 <script src="admin/src/layui.js"></script>
 
-            <script type="text/html" id="thumbTpl">
-                <div class="lp-col-center ">
-                    <div {{# if(d.thumb){}}class="lp-zoom" {{# }}}>
-                        <img src="{{# if(d.thumb){}}{{d.thumb}}{{# }else{}}admin/images/avatar.png{{# }}}"
-                             jqimg="{{# if(d.thumb){}}{{d.thumb}}{{# }else{}}admin/images/avatar.png{{# }}}"
-                             {{# if(d.thumb){}} class="lp-img" {{# }}}>
-                    </div>
-                </div>
-            </script>
-        
+
             <script type="text/html" id="is_showTpl">
                 <div class="lp-col-center ">
                     <input type="checkbox"

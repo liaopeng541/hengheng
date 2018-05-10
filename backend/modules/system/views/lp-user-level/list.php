@@ -57,8 +57,6 @@
 
                                                 <th lay-data="{field:'describe'}">描述</th>
 
-                                                <th lay-data="{field:'thumb',templet:'#thumbTpl'}">展示图片</th>
-
                                                 <th lay-data="{field:'sort',sort: true,edit: 'text'}">排序</th>
 
                                                 <th lay-data="{field:'is_show',templet:'#is_showTpl'}">APP首页展示</th>
@@ -76,14 +74,7 @@
 </body>
 <script src="admin/src/layui.js"></script>
 
-            <script type="text/html" id="thumbTpl">
-                <div class="lp-col-center ">
-                    <div {{# if(d.thumb){}}class="lp-zoom"{{# }}}>
-                        <img src="{{# if(d.thumb){}}{{d.thumb}}{{# }else{}}admin/images/avatar.png{{# }}}" jqimg="{{# if(d.thumb){}}{{d.thumb}}{{# }else{}}admin/images/avatar.png{{# }}}" {{# if(d.thumb){}} class="lp-img" {{# }}}>
-                    </div>
-                </div>
-            </script>
-        
+
             <script type="text/html" id="is_showTpl">
                 <div class="lp-col-center ">
                     <input type="checkbox" lp-data="{url:'<?=\yii\helpers\Url::toRoute("lp-user-level/setstatus")?>',id:{{d.level_id}},on:'1',off:'0',key:'level_id',table:'lp-user-level'}" name="is_show" lay-skin="switch" lay-filter="lp-user-level"  title="开关" lay-text="启用|禁用">

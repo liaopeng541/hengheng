@@ -163,7 +163,7 @@ class LpUserLevel extends \yii\db\ActiveRecord
     array (
       'sort' => '100',
       'show_name' => '展示图片',
-      'show_mode' => '图片',
+      'show_mode' => '不展示',
       'detail' => '1',
       'add_mode' => '图片',
       'search_mode' => '不搜索',

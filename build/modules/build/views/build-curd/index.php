@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     </div>
-                    <input type="hidden" name="table_name" value="<?=$_POST['table_name']?>">
+                    <input type="hidden" name="table_name" value="<?if(isset($_POST['table_name'])){ echo $_POST['table_name'];}?>">
                     <table class="layui-table">
                         <thead>
                         <tr>
