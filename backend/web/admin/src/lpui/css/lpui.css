@@ -1,0 +1,493 @@
+.lp-sear-btn {
+    position: absolute;
+    right: 0px;
+    top: -35px;
+    height: 90px;
+    background: #009688;
+    text-align: center;
+    width: 18px;
+    padding-top: 4px;
+    color: #ffffff;
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.lp-table-top {
+    margin: 5px;
+}
+
+.lp-search-box {
+    width: 0px;
+    position: absolute;
+    top: -35px;
+    bottom: 4px;
+    right: -4px;
+    background: #ffffff;
+    border: 2px solid #009688;
+}
+
+.lp-search-close {
+    width: 0px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.lp-search-body {
+    left: 0px;
+    top: 30px;
+    bottom: 37px;
+}
+
+.lp-search-title {
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    line-height: 30px;
+    color: #ffffff;
+    background: #009688;
+}
+
+.lp-search-sub-btn {
+    border-top: solid 1px #f2f2f2;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 3px 0px;
+    overflow: hidden;
+    display: none;
+}
+
+.drag-box {
+    position: fixed;
+    width: 5px;
+    top: 0px;
+    bottom: 0px;
+    background: #e2e2e2;
+    cursor: ew-resize;
+}
+
+.ew-resize-left {
+    left: 200px;
+
+}
+
+.layui-table-view {
+    margin: 0px;
+}
+
+.ew-resize-right {
+    right: 200px;
+}
+
+.lp-center-box {
+    position: fixed;
+    left: 205px;
+    right: 205px;
+}
+.lp-center-box-main {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+}
+
+.lp-grid {
+    width: 100%;
+    overflow: hidden;
+}
+
+.lp-right-detail {
+    position: fixed;
+    right: 0px;
+    width: 200px;
+}
+
+.lp-disable-select {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.lp-left-box {
+    position: fixed;
+    width: 200px;
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.lp-left-detail {
+    width: 100%;
+    height: 40px;
+    background: #34495e;
+    padding-left: 5px;
+    line-height: 40px;
+    color: #ffffff
+}
+
+.b-drag-box {
+    position: absolute;
+    height: 5px;
+    background: #e2e2e2;
+    bottom: 298px;
+    left: 0px;
+    right: 0px;
+    cursor: ns-resize;
+}
+
+.c-b-box {
+    position: relative;
+    bottom: 0px;
+    height: 300px;
+}
+
+.c-c-box {
+    position: relative;
+}
+
+@font-face {
+    font-family: 'layui-icon-ext';
+    src: url('../../font/ext/iconfont.eot?v=100');
+    src: url('../../font/ext/iconfont.eot?v=100#iefix') format('embedded-opentype'),
+    url('../../font/ext/iconfont.svg?v=100#iconfont') format('svg'),
+    url('../../font/ext/iconfont.woff?v=100') format('woff'),
+    url('../../font/ext/iconfont.ttf?v=100') format('truetype');
+}
+
+.layui-icon-ext {
+    font-family: "layui-icon-ext" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ztree {
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.lp-tree-body {
+    left: 0px;
+    top: 40px;
+}
+
+.lp-tip-box {
+    position: fixed;
+    left: 10000px;
+    min-height: 100px;
+    min-width: 150px;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px 2px #393D49;
+    border-radius: 2px;
+
+}
+
+.lp-drop-box {
+    position: fixed;
+    top: 0px;
+    left: 9999px;
+    padding: 3px;
+
+}
+
+.lp-drop-btn {
+    padding-right: 1px;
+}
+
+
+
+
+.lp-drop-box dl {
+    background: #ffffff;
+    box-shadow: 0px 0px 2px 1px #393D49;
+}
+
+.lp-drop-box dd {
+    cursor: pointer;
+    height: 25px;
+    border-bottom: 1px solid #f2f2f2;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.lp-drop-box dd:hover {
+    background: #f2f2f2;
+}
+
+.lp-drop-box dd i {
+    display: block;
+    float: left;
+    padding: 0 8px;
+    border-right: 1px solid #f2f2f2;
+    color: #999999;
+}
+
+.lp-drop-box dd span {
+    display: block;
+    float: left;
+    min-width: 80px;
+    color: #000000;
+    text-align: center;
+    line-height: 25px;
+    padding: 0 10px;
+    color: #999999;
+}
+
+.lp-drop-table-box {
+    position: fixed;
+    left: 9999px;
+    top: 0px;
+    background: #ffffff;
+    border: 2px solid #009688;
+    overflow: hidden;
+}
+
+.lp-table-top {
+    min-height: 30px;
+    padding-right: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.lp-search-form .layui-input {
+    height: 30px;
+    display: inline;
+}
+
+.lp-search-form {
+    display: inline;
+}
+
+.lp-col-detail {
+    color: #01AAED;
+    cursor: pointer;
+    text-align: center;
+}
+
+.lp-col-center {
+    text-align: center;
+    width: 100%;
+}
+
+.lp-col-detail:hover {
+    text-decoration: underline;
+}
+
+.layui-table thead tr th div {
+    text-align: center;
+}
+
+.lp-img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.layui-table-cell {
+    height: auto;
+    min-height: 28px;
+}
+
+.lp-progress {
+    border-radius: 0px;
+}
+
+.lp-progress-bar {
+    border-radius: 0px;
+}
+
+.lp-zoom {
+    border: 1px solid #BBB;
+    float: left;
+    position: relative;
+    padding: 0px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.lp-img-box {
+    border: 1px solid #BBB;
+    float: left;
+    position: relative;
+    padding: 0px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+div.zoomdiv {
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    display: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bigimg {
+    min-width: 400px;
+    max-width: 900px;
+}
+
+.lp-show-img {
+    width: 100%;
+    min-width: 500px;
+    max-height: 100%;
+}
+
+div.jqZoomPup {
+    z-index: 999;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaa;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    filter: alpha(Opacity=50);
+}
+
+.lp-detail-box {
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 98%;
+}
+
+.lp-detail-box-row {
+    width: 100%;
+    padding-left: 120px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 30px;
+    border: 1px #dddddd dashed;
+    position: relative;
+    left: 0px;
+    margin-bottom: 5px
+}
+.lp-detail-lable{
+    width: 120px;position: absolute;left:0px;bottom: 0px;top:0px;vertical-align: middle;text-align: right;line-height: 100%;border-right:1px #dddddd dashed;background: #f5f5f5
+}
+.lp-detail-lable-title{position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+
+
+}
+.lp-detail-content{
+    width: 100%;padding: 5px 10px;-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.layui-form-item{
+    margin-bottom: 10px;
+}
+.layui-form-mid{
+    padding: 5px 0px !important;
+}
+.layui-inline{
+    margin-bottom:0px !important;
+}
+/**图片上传**/
+.lp_upfile_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.lp_upfile_list li{
+    text-align: center;
+    list-style-type:none;
+    width: 80px;
+    height: 100px;
+    float: left;
+    margin-right:10px ;
+    border:1px solid #e6e6e6;
+    border-radius:5px;
+    position: relative;
+    line-height: 100px;
+    margin-top: 10px;
+}
+.lp_uploadfilebtn{
+    height: 100px;
+    width: 80px;
+    float: left;
+    display: block;
+    border:1px solid #e6e6e6;
+    text-align: center;
+    line-height: 85px;
+    text-decoration: none;
+    border-radius:5px;
+    color: #eeeeee;
+    font-size: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.lp_upfile_input{
+    visibility: hidden;
+    height: 0px;
+}
+.lp_upfile_list li img{
+    max-height: 98px;
+    max-width: 78px;
+    margin: auto;
+    border: none;
+    padding: 0;
+    vertical-align:middle;
+    display: none;
+}
+.lp_upfile_list li .delfilebtn{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    border:1px solid #e6e6e6;
+    line-height: 15px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #e6e6e6;
+}
+.lp_upfile_progress{
+    display:block;
+    width:65px;
+    height: 6px;
+    background-color:white;
+    border-radius:10px;
+    border:1px groove #666;
+    vertical-align:middle;
+
+    position: absolute;
+    left: 6px;
+    top: 46px;
+}
+.lp_upfile_progressbar{
+    width:0;
+    height:4px;
+    border-radius:10px;
+    background:url(../image/jdt.png) repeat-x center;
+}
+.lp_upfile_fault{
+    display: none;
+
+}

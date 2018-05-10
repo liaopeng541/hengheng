@@ -1,0 +1,622 @@
+/*
+ * @Author: Paco
+ * @Date:   2017-02-7
+ * @lastmodify 2017-07-20
+ * +----------------------------------------------------------------------
+ * | jqadmin [ jq酷打造的一款懒人后台模板 ]
+ * | Copyright (c) 2017 http://jqadmin.jqcool.net All rights reserved.
+ * | Licensed ( http://jqadmin.jqcool.net/licenses/ )
+ * | Author: Paco <admin@jqcool.net>
+ * +----------------------------------------------------------------------
+ */
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.layui-form-radio * {
+    font-size: 14px;
+}
+input,
+textarea {
+    color: #1E9FFF;
+}
+.lp-thumb{
+    max-height: 80px;
+    max-width: 50px;
+}
+.lp-onelinetext{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.layui-badge {
+    height: 18px;
+    line-height: 18px;
+    position: relative;
+    display: inline-block;
+    padding: 0 6px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    overflow: hidden;;
+}
+.layui-badge-cyan {
+    background-color: #2F4056;
+}
+.layui-badge-red {
+    background-color: #FF5722;
+}
+.layui-badge-orange {
+    background-color: #FFB800;
+}
+.layui-badge-green {
+    background-color: #009688;
+}
+.layui-badge-blue {
+    background-color: #1E9FFF;
+}
+.login-bg{
+    /*background: #eeeeee url() 0 0 no-repeat;*/
+    background:url(../images/bg.png) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.login{
+    margin: 120px auto 0 auto;
+    min-height: 420px;
+    max-width: 420px;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+.login a.logo{
+    display: block;
+    height: 58px;
+    width: 167px;
+    margin: 0 auto 30px auto;
+    background-size: 167px 42px;
+}
+.login .message {
+    margin: 10px 0 0 -58px;
+    padding: 18px 10px 18px 60px;
+    background: #189F92;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+}
+.login #darkbannerwrap {
+    background: url(../images/aiwrap.png);
+    width: 18px;
+    height: 10px;
+    margin: 0 0 20px -58px;
+    position: relative;
+}
+
+.login input[type=text],
+.login input[type=file],
+.login input[type=password],
+.login input[type=email], select {
+    border: 1px solid #DCDEE0;
+    vertical-align: middle;
+    border-radius: 3px;
+    height: 50px;
+    padding: 0px 16px;
+    font-size: 14px;
+    color: #555555;
+    outline:none;
+    width:100%;
+    box-sizing: border-box;
+}
+.login input[type=text]:focus,
+.login input[type=file]:focus,
+.login input[type=password]:focus,
+.login input[type=email]:focus, select:focus {
+    border: 1px solid #27A9E3;
+}
+.login input[type=submit],
+.login input[type=button]{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 24px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #189F92;
+    border-radius: 3px;
+    border: none;
+    -webkit-appearance: none;
+    outline:none;
+    width:100%;
+}
+.login hr {
+    background: #fff url() 0 0 no-repeat;
+}
+.login hr.hr15 {
+    height: 15px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.login hr.hr20 {
+    height: 20px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #DDD;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #DDD;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #DDD;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #DDD;
+}
+
+.has-warning input::-webkit-input-placeholder,
+.has-warning textarea::-webkit-input-placeholder {
+    color: #FF5722;
+}
+
+.has-warning input:-moz-placeholder,
+.has-warning textarea:-moz-placeholder {
+    color: #FF5722;
+}
+
+.has-warning input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #FF5722;
+}
+
+.has-warning input:-ms-input-placeholder,
+.has-warning textarea:-ms-input-placeholder {
+    color: #FF5722;
+}
+
+.head-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 30px auto;
+    color: #333;
+}
+
+.bgcolor-blue {
+    background: #1E9FFF;
+}
+
+.color-blue {
+    color: #1E9FFF;
+}
+
+.bgcolor-commred {
+    background: #ff6c60;
+}
+
+.color-commred {
+    color: #ff6c60;
+}
+
+.bgcolor-dark-green {
+    background: #009688;
+}
+
+.color-dark-green {
+    color: #009688;
+}
+
+.bgcolor-yellow-green {
+    background: #5FB878;
+}
+
+.color-yellow-green {
+    color: #5FB878;
+}
+
+.bgcolor-orange {
+    background: #FF5722;
+}
+
+.color-orange {
+    color: #FF5722;
+}
+
+.bgcolor-yellow {
+    background: #F7B824;
+}
+
+.color-yellow {
+    color: #F7B824;
+}
+
+body {
+    background: #f2f2f2;
+    color: #999;
+}
+
+.layui-elem-quote {
+    background-color: #FFF;
+    font-size: 14px;
+    color: #ff6c60;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+.larry-wrapper {
+    margin: 20px auto;
+}
+
+.symbol {
+    width: 40%;
+    padding: 1.4em 0;
+    border-radius: 4px 0px 0px 4px;
+    display: inline-block;
+    text-align: center;
+}
+
+.symbol i {
+    color: #fff;
+    font-size: 3em;
+}
+
+.value {
+    width: 58%;
+    text-align: center;
+    float: right;
+    margin-top: 1.4em;
+}
+
+.value h1 {
+    font-size: 1.8em;
+}
+
+.panel-heading {
+    border-bottom: 1px solid #EEE;
+    padding: 1.4em;
+}
+
+.panel-heading a {
+    color: #DDD;
+    font-weight: bold;
+}
+
+.panel-heading a:hover {
+    color: #999;
+}
+
+.log .panel-body h2 {
+    font-size: 1.4em;
+    color: #333;
+    line-height: 2.2em;
+}
+
+.log .panel-body ul li {
+    list-style: square inside;
+    line-height: 2em;
+}
+
+.echarts {
+    display: block;
+    padding: 15px;
+    height: 300px;
+}
+
+.panel-padding {
+    padding: 20px 10px;
+}
+
+.layui-form-label {
+    width: 100px;
+}
+
+
+
+
+.tag,
+.tag-defined {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    cursor: pointer;
+    line-height: 36px;
+    margin: 0 10px 10px 0;
+}
+
+.tag-selected {
+    border: 1px solid #5FB878;
+    color: #5FB878;
+}
+
+.tick-box {
+    display: none;
+}
+
+.tag .tick-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 10px solid;
+    border-color: transparent #5FB878 #5FB878 transparent;
+}
+
+.tag .tick {
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+    font-size: 8px;
+    color: #FFF;
+}
+
+.imgbox {
+    line-height: 120px;
+    height: 120px;
+    width: 120px;
+    float: left;
+    text-align: center;
+    margin:5px;
+    border:1px #cccccc solid;
+}
+
+.layui-form .has-warning {
+    position: relative;
+}
+
+.layui-form .has-warning .layui-input,
+.layui-form .has-warning .layui-form-select {
+    border: 1px solid #FF5722 !important;
+    color: #FF5722 !important;
+}
+
+.layui-form .has-success .layui-input,
+.layui-form .has-success .layui-form-select {
+    border: 1px solid #5FB878 !important;
+    color: #5FB878 !important;
+}
+
+.jq-error {
+    line-height: 36px;
+    color: #FF5722 !important;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.error {
+    line-height: 36px;
+    color: #FF5722 !important;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.add-subcat {
+    display: none;
+    padding: 20px;
+}
+
+.layui-form-item .left-icon {
+    float: left;
+    padding: 10px 15px;
+    background: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0 0 3px;
+}
+
+.layui-form-item .left-icon i {
+    font-size: 12px;
+}
+
+.layui-form-item .role-box {
+    position: relative;
+    column-width: 180px;
+}
+
+.layui-form-item .role-box .jq-role-inline {
+    height: 100%;
+    overflow: auto;
+}
+
+.permission-list ul li dl,
+.permission-list ul li dl dd {
+    margin-left: 1.5em;
+}
+
+.layui-form-switch {
+    width: 50px;
+}
+
+.layui-form .sort {
+    padding-left: 0;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    color: #999;
+}
+
+.jq-even tr:nth-child(even) {
+    background: #f4f4f5;
+}
+
+.jq-even tr:hover {
+    background: #999;
+    color: #FFF;
+}
+
+.layui-table th.txt-center,
+.layui-table td.txt-center {
+    text-align: center;
+}
+
+.font-pt {
+    padding-top: 6px;
+}
+
+.login-pane {
+    margin-top: 30%;
+}
+
+#list .img {
+    max-width: 100px;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+.layui-table tr th {
+    position: relative;
+}
+
+.layui-table th i {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 24px;
+    transform-origin: center center;
+    padding-left: 3px;
+    position: absolute;
+}
+
+.layui-table th i.rotate {
+    transform: rotate(180deg);
+    line-height: 20px;
+}
+
+.layui-table th .order {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.page-num {
+    margin: 0 10px;
+    display: inline-block;
+    width: 60px;
+    /* position: relative\0;
+    top: 10px\0; */
+}
+
+.page-num .layui-input,
+.page-num .layui-select {
+    height: 30px;
+    line-height: 30px;
+}
+
+.page-num .layui-form-select dl {
+    bottom: 32px;
+    top: -120px;
+}
+
+/*******新添加****************/
+.lp_upfile_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.lp_upfile_list li{
+    text-align: center;
+    list-style-type:none;
+    width: 80px;
+    height: 100px;
+    float: left;
+    margin-right:10px ;
+    border:1px solid #e6e6e6;
+    border-radius:5px;
+    position: relative;
+    line-height: 100px;
+    margin-top: 10px;
+}
+.lp_uploadfilebtn{
+    height: 100px;
+    width: 80px;
+    float: left;
+    display: block;
+    border:1px solid #e6e6e6;
+    text-align: center;
+    line-height: 85px;
+    text-decoration: none;
+    border-radius:5px;
+    color: #eeeeee;
+    font-size: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.lp_upfile_input{
+    visibility: hidden;
+    height: 0px;
+}
+.lp_upfile_list li img{
+    max-height: 98px;
+    max-width: 78px;
+    margin: auto;
+    border: none;
+    padding: 0;
+    vertical-align:middle;
+    display: none;
+}
+.lp_upfile_list li .delfilebtn{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    border:1px solid #e6e6e6;
+    line-height: 13px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #e6e6e6;
+}
+.lp_upfile_progress{
+    display:block;
+    width:65px;
+    height: 6px;
+    background-color:white;
+    border-radius:10px;
+    border:1px groove #666;
+    vertical-align:middle;
+
+    position: absolute;
+    left: 6px;
+    top: 46px;
+}
+.lp_upfile_progressbar{
+    width:0;
+    height:4px;
+    border-radius:10px;
+    background:url(../../image/jdt.png) repeat-x center;
+}
+.lp_upfile_fault{
+    display: none;
+
+}
